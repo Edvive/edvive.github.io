@@ -7,10 +7,6 @@ html, body {
     width: 75%;
 }
 
-p {
-    margin: 0!important;
-}
-
 @media (min-width: 992px) {
     .card {
         width: 25%!important;
