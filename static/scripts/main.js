@@ -15,7 +15,7 @@ window.onload = function() {
     // let ajax = new XMLHttpRequest();
 
     $.ajax({
-        url: `http://gsx2json.com/api?id=${SPREADSHEET_ID}&columns=false`
+        url: `https://gsx2json.com/api?id=${SPREADSHEET_ID}&columns=false`
     }).done(function(data) {
         data = data.rows[0];
 
