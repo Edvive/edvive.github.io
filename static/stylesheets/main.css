@@ -1,10 +1,63 @@
 html, body {
     height: 100%!important;
-    background-color: #ffd740!important;
+    background-color: #1c1c1c!important;
 }
 
 .card {
     width: 75%;
+    background-color: #E43E4C!important;
+}
+
+.btn {
+    background-color: #1c1c1c!important;
+    color: white!important;
+}
+
+.disabled-link {
+    pointer-events: none;
+}
+
+.disabled-link > .btn{
+    pointer-events: none;
+    opacity: 70%;
+}
+
+.bright-body {
+    background-color: #f1f1f1!important;
+}
+
+.bright-btn {
+    background-color: #ffffff!important;
+    color: #1c1c1c!important;
+}
+
+.form-check-input[type=checkbox] {
+    background-color: #ffffff!important;
+}
+
+.form-switch .form-check-input[type=checkbox]:after {
+    background-color: #1c1c1c!important;
+}
+
+.form-check-input:checked {
+    border-color: #ffffff!important;
+}
+
+.form-switch .form-check-input:checked:focus:before {
+    -webkit-box-shadow: 3px -1px 0 13px #ffffff!important;
+    box-shadow: 3px -1px 0 13px #ffffff!important;
+}
+
+.form-check-input:checked:focus {
+    border-color: #ffffff!important;
+}
+
+.form-check-input[type=checkbox]:checked {
+    background-color: #1c1c1c!important;
+}
+
+.form-switch .form-check-input:checked[type=checkbox]:after {
+    background-color: #ffffff!important;
 }
 
 @media (min-width: 992px) {
