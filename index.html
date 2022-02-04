@@ -21,14 +21,15 @@
 
         a {
             position: absolute;
-            top: 756px;
-            left: 193px;
+            /* top: 756px;
+            left: 193px; */
             background-color: black;
-            width: 412px;
-            height: 62px;
+            /* width: 412px;
+            height: 62px; */
             opacity: 0;
             border-radius: 10px;
         }
+
         a:hover {
             opacity: 0.2;
         }
@@ -36,8 +37,25 @@
 </head>
 
 <body>
-    <img src="./static/images/Section_1V.jpg" alt="">
-    <a href="https://speak.edvive.com"></a>
+    <img id="sec_1" src="./static/images/Section_1V.jpg" alt="">
+    <a id="button" href="https://speak.edvive.com"></a>
+
+    <script>
+        function setSizes() {
+            const sec_1Style = window.getComputedStyle(document.getElementById('sec_1'));
+            const button = document.getElementById('button');
+
+            console.log(parseFloat(sec_1Style.height) * 756 / 922 + 'px');
+
+            button.style.top = parseFloat(sec_1Style.height) * 756 / 922 + 'px'
+            button.style.left = parseFloat(sec_1Style.width) * 193 / 1750 + 'px'
+
+            button.style.height = parseFloat(sec_1Style.height) * 62 / 922 + 'px'
+            button.style.width = parseFloat(sec_1Style.width) * 419 / 1750 + 'px'
+        }
+        window.onload = setSizes;
+        window.onresize = setSizes;
+    </script>
 </body>
 
 </html>
